@@ -14,7 +14,7 @@ function Comments({ eventId }) {
       .then((data) => {
         setCommentList(data.comments)
       })
-  }, [showComments])
+  }, [eventId])
 
   function toggleCommentsHandler() {
     setShowComments((prevStatus) => !prevStatus)
